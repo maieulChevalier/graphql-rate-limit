@@ -221,7 +221,7 @@ export function rateLimitDirective<TContext>({
           }
 
           const resource = e as RateLimiterRes;
-          return onLimit(resource, directiveArgs, source, args, context, info);
+          onLimit(resource, directiveArgs, source, args, context, info);
         }
       }
       return resolve(source, args, context, info);
